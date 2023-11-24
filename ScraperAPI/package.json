@@ -1,0 +1,26 @@
+{
+  "name": "scraperapi",
+  "version": "1.0.0",
+  "description": "RGBlogScraper is a web scraping tool based on Selenium built for RateGain CodeRangers 2023.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devAyushDubey/RGBlogScraper.git"
+  },
+  "keywords": [
+    "scraper"
+  ],
+  "author": "Ayush Dubey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devAyushDubey/RGBlogScraper/issues"
+  },
+  "homepage": "https://github.com/devAyushDubey/RGBlogScraper#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
