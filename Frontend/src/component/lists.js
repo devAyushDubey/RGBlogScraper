@@ -34,9 +34,9 @@ const NestedList = () => {
   };
 
   const handleApiCall = () => {
-    // Iterate over the array of checked items and perform API calls
+    
     const idString = checkedItems.join(',');
-    // Log the resulting string
+    
     <XLSXDownload idString = "aaa"/>
     console.log(`API calls for IDs: ${idString}`);
   };
@@ -74,7 +74,7 @@ const NestedList = () => {
            sx={{
             color: '#ff8d01',
             '&.Mui-checked': {
-              color: '#ff8d01', // Set the checkbox color when checked
+              color: '#ff8d01', 
             },
           }}
           />
@@ -153,7 +153,7 @@ const NestedList = () => {
               <Checkbox  sx={{
                 color: '#ff8d01',
                 '&.Mui-checked': {
-                  color: '#ff8d01', // Set the checkbox color when checked
+                  color: '#ff8d01', 
                 },
               }}/>
             </ListItemIcon>
@@ -166,7 +166,7 @@ const NestedList = () => {
           <Checkbox  sx={{
                 color: '#ff8d01',
                 '&.Mui-checked': {
-                  color: '#ff8d01', // Set the checkbox color when checked
+                  color: '#ff8d01', 
                 },
               }}/>
         </ListItemIcon>
