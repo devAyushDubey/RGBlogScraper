@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import XLSXDownload from '../component/downloadxls'
 export default function ButtonAppBar() {
   
     return (
@@ -25,7 +25,7 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             RGBlogScraper
           </Typography>
-          <Button color="inherit">Download xls</Button>
+          <Button onClick={XLSXDownload} color="inherit">Download xls</Button>
         </Toolbar>
       </AppBar>
     </Box>

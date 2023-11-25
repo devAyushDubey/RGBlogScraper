@@ -10,7 +10,7 @@ import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
-export default function NestedList() {
+const NestedList = () => {
   const [open, setOpen] = React.useState(true);
 
   const handleClick = () => {
@@ -19,11 +19,11 @@ export default function NestedList() {
 
   return (
     <List
-      sx={{ width: '100%', maxWidth: 360, bgcolor: 'darkslategray' }}
+      sx={{ width: '100%', maxWidth: 360, margin: 'auto', backgroundColor: 'darkslategray' }}
       component="nav"
       aria-labelledby="nested-list-subheader"
       subheader={
-        <ListSubheader component="div" id="nested-list-subheader">
+        <ListSubheader component="div" id="nested-list-subheader" sx={{ color: 'white' }}>
           Nested List Items
         </ListSubheader>
       }
@@ -32,31 +32,31 @@ export default function NestedList() {
         <ListItemIcon>
           <Checkbox />
         </ListItemIcon>
-        <ListItemText primary="Blog Title" />
+        <ListItemText primary="Blog Title" sx={{ color: 'white' }} />
       </ListItemButton>
       <ListItemButton id="blogURL">
         <ListItemIcon>
           <Checkbox />
         </ListItemIcon>
-        <ListItemText primary="Blog URL" />
+        <ListItemText primary="Blog URL" sx={{ color: 'white' }} />
       </ListItemButton>
       <ListItemButton id="date">
         <ListItemIcon>
           <Checkbox />
         </ListItemIcon>
-        <ListItemText primary="Date" />
+        <ListItemText primary="Date" sx={{ color: 'white' }} />
       </ListItemButton>
       <ListItemButton id="likeCount">
         <ListItemIcon>
           <Checkbox />
         </ListItemIcon>
-        <ListItemText primary="Like Count" />
+        <ListItemText primary="Like Count" sx={{ color: 'white' }} />
       </ListItemButton>
       <ListItemButton onClick={handleClick} id="tags">
         <ListItemIcon>
           <Checkbox />
         </ListItemIcon>
-        <ListItemText primary="Tags" />
+        <ListItemText primary="Tags" sx={{ color: 'white' }} />
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
@@ -65,19 +65,19 @@ export default function NestedList() {
             <ListItemIcon>
               <Checkbox />
             </ListItemIcon>
-            <ListItemText primary="Hotel marketing strategies" />
+            <ListItemText primary="Hotel marketing strategies" sx={{ color: 'white' }} />
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }} id="tag2">
             <ListItemIcon>
               <Checkbox />
             </ListItemIcon>
-            <ListItemText primary="Hotel Management" />
+            <ListItemText primary="Hotel Management" sx={{ color: 'white' }} />
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }} id="tag3">
             <ListItemIcon>
               <Checkbox />
             </ListItemIcon>
-            <ListItemText primary="Hotel technology" />
+            <ListItemText primary="Hotel technology" sx={{ color: 'white' }} />
           </ListItemButton>
         </List>
       </Collapse>
@@ -85,8 +85,10 @@ export default function NestedList() {
         <ListItemIcon>
           <Checkbox />
         </ListItemIcon>
-        <ListItemText primary="Image URLs" />
+        <ListItemText primary="Image URLs" sx={{ color: 'white' }} />
       </ListItemButton>
     </List>
   );
 }
+
+export default NestedList;
